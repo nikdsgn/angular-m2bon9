@@ -1,0 +1,113 @@
+h1 {
+  text-align: center;
+}
+
+.brewcontainer {
+  padding-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+}
+
+ul li {
+  background: rgba(177, 206, 255, 0.233);
+  -webkit-box-shadow: 2px 2px rgba(177, 206, 255, 0.116);
+          box-shadow: 2px 2px rgba(177, 206, 255, 0.116);
+  border-radius: 10px;
+  padding: 1rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+ul li p {
+  margin: 0;
+}
+
+ul li p.name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+ul li .ps {
+  padding-top: 1rem;
+}
+
+ul li .ps p.country {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+ul li .ps p.stateandcity {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+ul li .whatkindof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(177, 206, 255, 0.152);
+  -webkit-box-shadow: 2px 2px rgba(177, 206, 255, 0.156);
+          box-shadow: 2px 2px rgba(177, 206, 255, 0.156);
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+ul li .whatkindof p.stateandcity {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+ul li .whatkindof p.stateandcitySerif {
+  font-size: 1rem;
+  font-family: "Courgette", cursive;
+  padding-top: 0.5rem;
+}
+
+ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul li a img {
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .brewcontainer ul {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+/*# sourceMappingURL=list.component.css.map */
