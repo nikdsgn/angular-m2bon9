@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
+$primary: rgb(0, 110, 255);
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: $primary;
+  padding: 1rem 0;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a.logo {
+    font-weight: bold;
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+
+      li a {
+        padding: 1rem;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    text-align: center;
+
+    ul {
+      padding-left: 0;
+    }
+  }
+}
