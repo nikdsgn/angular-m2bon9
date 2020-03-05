@@ -1,0 +1,21 @@
+<h1>Breweries</h1>
+
+<div class="brewcontainer">
+  <ul *ngIf="brews">
+    <li *ngFor="let brew of brews">
+      <p class="name">{{ brew.name }}</p>
+      <div class="ps">
+        <p class="country">{{ brew.country }}</p>
+        <p class="stateandcity">{{ brew.state }} , {{ brew.city }}</p>
+      </div>
+
+      <div class="whatkindof">
+        <p class="stateandcity">What kind of brewery are we?</p>
+        <p class="stateandcitySerif">{{ brew.brewery_type }}</p>
+      </div>
+      <a href="{{ brew.website_url }}" class="site"
+        ><img src="assets/siteicon.png" alt=""
+      /></a>
+    </li>
+  </ul>
+</div>
